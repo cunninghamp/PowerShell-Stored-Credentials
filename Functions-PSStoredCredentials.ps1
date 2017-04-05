@@ -82,6 +82,9 @@ Function New-StoredCredential {
 
     $Credential.Password | ConvertFrom-SecureString | Out-File "$($KeyPath)\$($Credential.Username).cred" -Force
 
+    # Return a PSCredential object (with no password) so the caller knows what credential username was entered for future recalls
+    New-Object -TypeName System.Management.Automation.PSCredential($Credential.Username,(new-object System.Security.SecureString))
+
 }
 
 
