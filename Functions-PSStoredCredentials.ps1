@@ -10,7 +10,7 @@ on your admin workstation.
 . .\Functions-PSStoredCredentials.ps1
 
 .LINK
-https://practical365.com/saving-credentials-for-office-365-powershell-scripts-and-scheduled-tasks
+https://practical365.com/blog/saving-credentials-for-office-365-powershell-scripts-and-scheduled-tasks
     
 .NOTES
 Written by: Paul Cunningham
